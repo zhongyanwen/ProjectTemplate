@@ -1,0 +1,61 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 1000Mb
+  jackson:
+    time-zone: GMT+8
+  redis:
+    jedis:
+      pool:
+        max-active: 10000
+        min-idle: 0
+    host:
+    password:
+    port:
+
+mybatis:
+    mapperLocations: classpath:mybatis/com/shanyu/mapper/xml/*.xml
+
+qcloud:
+  appid:
+  secretid:
+  secretkey:
+  bucket:
+  region:
+  etag:
+
+qiniu:
+  access-key:
+  bucket:
+  link-address:
+  secret-key:
+
+wx:
+   url:
+   app-id:
+   app-secret:
+
+wxpay:
+  appid:
+  mch_id:
+  spbill_create_ip:
+  notify_url:
+  trade_type:
+  signType:
+  createOrder_url:
+  apiCert:
+  refund_url:
+
+wxwebpage:
+  authorize:
+    appid:
+    appsecret:
+    backUrl:
+
+certificate: /certificate/apiclient_cert.p12
